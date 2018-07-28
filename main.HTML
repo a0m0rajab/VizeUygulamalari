@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vize uygulamasi
+    </title>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css">
+    <!-- Jquery Library -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- DataTable libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+   
+</head>
+<body>
+
+    <h2>Türk Vatandaşlarının Tabi Olduğu Vize Uygulamaları</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <table summary="DataTables ile yapılan bir örnek... responsive özelliği de kullanıyor" class="table table-bordered table-hover dt-responsive">
+            <caption class="text-center"><a href="https://datatables.net/extensions/responsive/" target="_blank">DataTables</a> ile yapilan bir örnek</caption>
+            <thead>
+              <tr>
+                <th>Ülke</th>
+                <th>Umuma mahsus pasaport</th>
+                <th>Hususi pasaport</th>
+                <th>Hizmet pasaport</th>
+                <th>Diplomatik pasaport</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Afganistan</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              
+              <tr>
+                <td>Angola</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>tabi</td>
+              </tr>
+              <tr>
+                <td>Andorra</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Amerika Birleşik Devletleri</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>tabi</td>
+                <td>tabi</td>
+              </tr>
+
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5" class="text-center">Bilgileri  <a href="http://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank">Dışİşleri bakanlığı</a> Sitesinden Toplandı.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <p class="p"> <a href="https://github.com/a0m0rajab" target="_blank">Abdurrahman RAJAB.</a></p>
+
+</body>
+<style>
+body { 
+  font-size: 140%; 
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+
+</style>
+<script>
+    $('table').DataTable();
+</script>
+</html>
