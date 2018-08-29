@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vize uygulamasi
-    </title>
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Style Libraries -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css">
-    <!-- Jquery Library -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <!-- DataTable libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-    <script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
-   
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vize uygulamasi
+  </title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3 css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Style Libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css">
+  <!-- Jquery Library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- DataTable libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+  <script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+
 </head>
+
+
 <body>
 
-    <h2>Türk Vatandaşlarının Tabi Olduğu Vize Uygulamaları</h2>
+  <h2>Türk Vatandaşlarının Tabi Olduğu Vize Uygulamaları</h2>
 
-    <div class="container">
+  <div class="w3-row">
+    <div class="w3-col" style="width:5%">
+      <p></p>
+    </div>
+    <div class="w3-col " style="width:90%">
+      <p></p>
       <div class="row">
         <div class="col-xs-12">
-          <table summary="DataTables ile yapılan bir örnek... responsive özelliği de kullanıyor" class="table table-bordered table-hover dt-responsive">
-            <caption class="text-center"><a href="https://datatables.net/extensions/responsive/" target="_blank">DataTables</a> ile yapilan bir örnek</caption>
+          <table summary="DataTables ile yapılan bir örnek... responsive özelliği de kullanıyor" class="table table-bordered table-hover dt-responsive"
+            style="width: 100%">
+            <caption class="text-center">
+              <a href="https://datatables.net/extensions/responsive/" target="_blank">DataTables</a> ile yapilan bir örnek</caption>
             <thead>
               <tr>
                 <th>Ülke</th>
@@ -40,80 +49,1791 @@
                 <th>Hususi pasaport</th>
                 <th>Hizmet pasaport</th>
                 <th>Diplomatik pasaport</th>
+                <th>Açıklama</th>
+
               </tr>
             </thead>
             <tbody>
+              <!-- Table information start -->
               <tr>
-                <td>Afganistan</td>
-                <td>tabi</td>
-                <td>tabi</td>
-                <td>tabi</td>
+                <td>Afganistan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
                 <td>90 gün süreyle vizeden muaftır.</td>
-              </tr>
-              
-              <tr>
-                <td>Angola</td>
-                <td>tabi</td>
-                <td>tabi</td>
-                <td>tabi</td>
-                <td>tabi</td>
+                
               </tr>
               <tr>
-                <td>Andorra</td>
-                <td>90 gün süreyle vizeden muaftır.</td>
-                <td>90 gün süreyle vizeden muaftır.</td>
-                <td>90 gün süreyle vizeden muaftır.</td>
+                <td>Almanya Federal Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Amerika Birleşik Devletleri:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Andorra:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Angola:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Antigua-Barbuda:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Arjantin:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Arnavutluk:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Avustralya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Avusturya:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+
+
+              </tr>
+              <tr>
+                <td>Azerbaycan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Bahamalar:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bahreyn:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 günü aşmamak kaydıyla vizden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Bangladeş:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Barbados:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Belarus:</td>
+                <td>muaftır</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>30 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Belçika:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Belize:</td>
+                <td>muaftır</td>.
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Benin:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
                 <td>90 gün süreyle vizeden muaftır.</td>
               </tr>
               <tr>
-                <td>Amerika Birleşik Devletleri</td>
-                <td>tabi</td>
-                <td>tabi</td>
-                <td>tabi</td>
-                <td>tabi</td>
+                <td>Birleşik Arap Emirlikleri:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar seyahatlerinde vizeden muaftır.</td>
               </tr>
+              <tr>
+                <td>Bolivya:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Bosna-Hersek:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Botsvana:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Brezilya:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Brunei:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Brunei’ye giriş, çıkış, transit geçişlerinde, ilk giriş tarihinden itibaren otuz (30) günü geçmeyen seyahatlerinde
+                  vizeden muaftırlar.
+                </td>
+              </tr>
+              <tr>
+                <td>Bulgaristan:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>
+                  diplomatik ve hizmet pasaportlar 30 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                  Hususi :ilk giriş tarihinden itibaren 180 gün içerisinde 90 gün süreyle vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Burkina Faso:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Burundi:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmayan süre zarfında vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Butan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cape Verde:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cezayir:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Cibuti:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Çad:</td>
+                <td> tabidir</td>
+                <td> tabidir</td>
+                <td> tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+                
+              </tr>
+              <tr>
+                <td>Çek Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Çin Halk Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Danimarka:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Doğu Timor:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td> Bu ülkeye seyahat edecek vatandaşlarımıza, Doğu Timor sınır kapılarında 30 gün ikamet süreli vize verilmektedir.</td>
+              </tr>
+              <tr>
+                <td>Dominika:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>21 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Dominik Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>havalimanında vize alınabilmektedir.</td>
+              </tr>
+              <tr>
+                <td>Ekvator:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 90 güne kadar olan turistik amaçlı seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Ekvator Ginesi:</td>
+                <td> tabidir</td>
+                <td> tabidir</td>
+                <td> tabidir</td>
+                <td> tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>El Salvador:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Endonezya:</td>
+
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  30 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Eritre:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>Ermenistan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Umuma Mahsus Pasaport Hamili Türk vatandaşlarına uçakla gidilmesi halinde havalimanında vize verilmektedir.
+                </td>
+              </tr>
+              <tr>
+                <td>Estonya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Etiyopya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Fas:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Fiji:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 günü aşmayan turistik seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Fildişi Sahili:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar (Diplomatik, Hizmet ve Hususi), ilk giriş tarihinden itibaren her altı (6) ay içerisinde
+                  doksan (90) günü aşmamak kaydıyla vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>Filipinler:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Filistin:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Filistin’e seyahat edecek Türkiye Cumhuriyeti vatandaşlarının İsrail vizesi almaları gerekmektedir (Mısır
+                  üzerinden Gazze Şeridi’ne girecek vatandaşlarımız hariç).</td>
+              </tr>
+              <tr>
+                <td>Finlandiya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Fransa:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Gabon:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>
+                  Diplomatik: 90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                  Türk vatandaşları Ülkeye giriş vizesi Gabon dış temsilciliklerinden alınabilmektedir. Sınırda bandrol vize uygulamasından
+                  yararlanma koşulları ise şunlardır: - En az 6 ay geçerli pasaport hamili olmak, - Gerekli aşıların güncel
+                  olduğunu gösteren uluslararası aşı karnesine sahip olmak, - Librevil Uluslararası Leon Mba Havaalanına
+                  varışta PAF’a (Hava ve Sınır Polisi) ait “ülkeye giriş talep formu (demande d'admission sur le territoire
+                  national)” doldurmak, - Vize harcı olarak 45.000 CFA veya 70 Avro ödemek, - Turistik amaçlı seyahatlerde
+                  otel rezervasyon belgesi veya ikamet edilecek yerin adresi, iş amaçlı seyahatlerde ise davet mektubu ibraz
+                  etmek.
+                </td>
+              </tr>
+              <tr>
+                <td>Gambiya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Gana:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Gine:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Gine-Bissau:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Grenada:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 gün süreyle vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Guatemala:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 gün süreyle vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Guyana:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içerisinde toplam kalış süresi 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Güney Afrika Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>30 güne kadar ikamet süreli müteaddit giriş vizelerini sınır kapılarında alabilirler.</td>
+              </tr>
+              <tr>
+                <td>Güney Sudan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gürcistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>bir yıla kadar seyahatlerinde vizeden muaftır. Vatandaşlarımızın Gürcistan’a geçerli kimlik belgeleri ile
+                  vizesiz olarak seyahat edebilmeleri mümkündür.</td>
+              </tr>
+              <tr>
+                <td>Haiti:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>
+                  Haiti'ye seyahat eden umuma mahsus pasaport hamili vatandaşlarımız Haiti'ye girişte havaalanında 10 ABD Doları karşılığında
+                  90 gün kalma imkanı veren ve turist kartı olarak adlandırılan giriş vizesi alarak ülkeye girebilmektedir.
+                  Resmi pasaport hamili vatandaşlarımız ise giriş için herhangi bir ödeme yapmamaktadır.</td>
+              </tr>
+              <tr>
+                <td>Hırvatistan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Hindistan:</td>
+                <td>tabidir</td>
+
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Hollanda:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Hollanda Antilleri (Curacao,St. Maarten, Bonaire, St. Eustatius ve Saba):</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>Umuma ve Hizmet Pasaport hamilleri vize başvurularını, resmi ikametleri başka bir ülkede bulunmadığı takdirde,
+                  Türkiye’deki Hollanda Büyükelçiliği veya Başkonsolosluklarına yapmaları gerekmektedir. </td>
+              </tr>
+              <tr>
+                <td>Honduras:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+
+
+              </tr>
+              <tr>
+                <td>Hong Kong:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Pasaport geçerlilik süresi en az 6 ay olan Türk vatandaşları, Hong Kong S.A.R.’a (Special Administrative
+                  Region of The People's Republic of China/Özel İdare Bölgesi) yapacakları turistik ve iş görüşmesi amaçlı
+                  seyahatlerinde üç ay süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Irak:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>İngiltere:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>
+                  Diplomatik Pasaport hamilleri ise 180 gün içinde 90 günü aşmamak kaydıyla, anılan ülkeye yapacakları seyahatlerinde vizeden
+                  muaftır. İngiltere üzerinden diğer ülkelere aktarmalı seyahat edecek vatandaşlarımız transit vizeye tabidir.
+                  Bununla birlikte, vatandaşlarımızın, gidilecek ülkeye (onward flight) 24 saat içinde uçmaları ve gerekli
+                  vizelerinin/belgelerinin olması şartının yanı sıra belirli koşulları sağlamaları halinde, transit vizeden
+                  muaf olacakları (transit without visa concession) Londra Başkonsolosluğumuz tarafından bildirilmektedir.
+                  Ayrıntılı bilgi için
+                  <a href="http://www.mfa.gov.tr/ingiltere-uzerinden-diger-ulkelere-aktarmali-seyahat-edecek-vatandaslarimiza-yonelik-duyuru_-13-mart-2014.tr.mfa"
+                    target="_blank">http://www.mfa.gov.tr/ingiltere-uzerinden-diger-ulkelere-aktarmali-seyahat-edecek-vatandaslarimiza-yonelik-duyuru_-13-mart-2014.tr.mfa</a>
+                  adresine bakınız.</td>
+              </tr>
+              <tr>
+                <td>İran:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>.
+              </tr>
+              <tr>
+                <td>İrlanda:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>İspanya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>İsrail:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>İsveç:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>İsviçre:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>İtalya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır. (Vatikan için de geçerlidir).</td>
+              </tr>
+              <tr>
+                <td>İzlanda:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Jamaika:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Japonya:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kamboçya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  30 gün geçerli turistik amaçlı vizeler, Kamboçya’nın ülkemizdeki Fahri Konsolosluğunun yanı sıra, sınır kapılarında da verilmektedir.
+                  Resmi pasaportlar: 180 gün içinde 30 günü aşmamak kaydıyla vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Kamerun:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Resmi heyet mensubu olan Diplomatik, Hizmet ve Hususi Pasaport hamilleri her 180 günlük dönem içerisinde
+                  ilk giriş tarihinden itibaren toplam kalış süresi 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kanada:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Karadağ:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Katar:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Umuma pasaportu: 30 güne kadar ikamet süreli seyahatlerinde vizeden muaftır. Resmi pasaportlar: 180 gün içinde
+                  90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kazakistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 gün Vizeden muaftır, Türk vatandaşlarının Kazakistan’da 5 günden fazla kalmak istemeleri halinde, ülkeye
+                  giriş tarihini takip eden 5 gün içerisinde göç polisine kayıt olma ve kayıt yaptırılan şehirden başka bir
+                  şehre gidildiğinde kayıt yenileme zorunlulukları bulunmaktadır.</td>
+              </tr>
+              <tr>
+                <td>Kenya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  1 Eylül 2015 tarihinden itibaren Kenya'ya seyahat edecek umuma mahsus pasaport hamili vatandaşlarımız Kenya'ya varışlarından
+                  önce "www.ecitizen.go.ke" web sayfasındaki "Services" bölümüne girerek elektronik vize almaları gerekmektedir.
+                  Yeni uygulamayla vize alınması en az 2 gün sürebilmekte olup, vatandaşlarımızın, Kenya'ya varışta, geçerli
+                  elektronik vizenin bilgisayar çıktısıyla birlikte, en az 6 ay geçerli pasaport, otel rezervasyonu, seyahat
+                  programı, (turist olarak gidiliyorsa) ziyaret edilecek yerlerin listesi ve (iş ve arkadaş ziyaretleri için)
+                  davet mektubu gibi tamamlayıcı belgeleri sınır polisine ibraz etmeleri gerekmektedir. Ahiren, Kenya makamlarından
+                  alınan duyuruda e-vize başvuruları esansında sorunlar yaşandığı için e-vize uygulamasının yanı sıra Büyükelçiliklerde
+                  ve sınır kapılarında manuel vize uygulamasının da tekrar yürürlüğe konulduğu kaydedilmektedir. Resmi pasaport
+                  hamili vatandaşlarımız 90 güne kadarki seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Kıbrıs Rum Kesimi (GKRY):</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Vatandaşlarımız vizelerini Güney Kıbrıs’ın Atina Büyükelçiliğinden temin edebilirler.</td>
+              </tr>
+              <tr>
+                <td>Kırgızistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kiribati:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>KKTC:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Vatandaşlarımızın KKTC’ye geçerli kimlik belgeleri ile vizesiz olarak seyahat edebilmeleri mümkündür.</td>
+              </tr>
+              <tr>
+                <td>Kolombiya:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Komor Federe İslam Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kongo:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>
+                  Diplomatik: 
+                  90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                  Ülkede çalıştırılacak yabancı personel için çalışma izinlerinin varıştan önce Kongo Cumhuriyeti Temsilciliğinden
+                  alınması gerekmektedir.
+                </td>
+
+              </tr>
+              <tr>
+                <td>Kongo Demokratik Cumhuriyeti (Zaire):</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kore Cumhuriyeti (Güney Kore):</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kore Halk Cumhuriyeti (Kuzey Kore):</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kosova:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kosta Rika:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Kuveyt:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Küba:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Laos:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lesotho:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Letonya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Liberya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Libya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td> 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Lihtenştayn:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Litvanya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lübnan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır. Lübnan’da göreve atanan Diplomatik, Hizmet ve Hususi Pasaport hamilleri
+                  görevleri müddetince, vizeden muaftır.
+                </td>
+
+              </tr>
+              <tr>
+                <td>Lüksemburg:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Macaristan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içerisinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Madagaskar (Malagazi):</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Makau Özel İdare Bölgesi:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+
+                <td>30 güne kadar yapacakları seyahatlerde vizeden muaftır. Daha uzun süreli seyahatler için Çin Halk Cumhuriyeti’nin
+                  Ankara Büyükelçiliğine vize başvurusunda bulunulması gerekmektedir
+                </td>
+              </tr>
+              <tr>
+                <td>Makedonya:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                  <a href="site_media/html/viza-d-studies.doc">Makedonya’ya Öğrenim Vizesi İçin Talep Edilen Belgeler</a>
+                </td>
+
+              </tr>
+              <tr>
+                <td>Malavi:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>  </td>
+              </tr>
+              <tr>
+                <td>Maldivler:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 güne kadar seyahatlerinde vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>Malezya:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Mali:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Malta:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mauritius:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 güne kadar seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Meksika:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>
+                  Turizm, iş, eğitim, gazetecilik veya transit geçiş gibi nedenlerle Meksika'ya seyahat edecek vatandaşlarımız, havayoluyla
+                  seyahat etmek kaydıyla 30 gün geçerli tek giriş vizelerini
+                  <a href="http://inm.gob.mx/index.php/page/Inicio_Autorizacion_Electronica/tr.html" target="_blank">internet adresinden</a>
+                  harçsız olarak alabilmektedirler.</td>
+              </tr>
+              <tr>
+                <td>Mısır:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Mikronezya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Moğolistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 gün Vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Moldova:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Monako:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar: 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır. Monako’ya seyahat etmek isteyen
+                  vatandaşlarımızın vize başvurularını, resmi ikametleri başka bir ülkede bulunmadığı takdirde, Türkiye’deki
+                  Fransa Büyükelçiliği veya Başkonsolosluklarına yapmaları gerekmektedir.</td>
+              </tr>
+              <tr>
+                <td>Moritanya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar: 90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                </td>
+              </tr>
+              <tr>
+                <td>Mozambik:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar: asgari 6 ay geçerli pasaport ile ilk giriş tarihinden itibaren her 180 gün içinde 90 günü
+                  aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Myanmar (Burma veya Birmanya):</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>Namibya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar: 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Nauru:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Nepal:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Nijer:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Nijerya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+                <!-- 137 -->
+              </tr>
+              <tr>
+                <td>Nikaragua:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+              </tr>
+              <tr>
+                <td>Norveç:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>resmi pasaportlar: 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Oman (Umman):</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Umuma Mahsus Pasaport hamilleri ise vizelerini sınır kapılarında alabilmektedirler.</td>
+              </tr>
+              <tr>
+                <td>Orta Afrika Cumhuriyeti:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Özbekistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 gün Vizeden muaftır</td>
+
+              </tr>
+              <tr>
+                <td>Pakistan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Palau Cumhuriyeti:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Panama:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>6 aylık bir süre için vizeden muaf bulunmaktadırlar.
+                </td>
+              </tr>
+              <tr>
+                <td>Papua Yeni Gine:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Paraguay:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Peru:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Polonya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Portekiz:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>resmi pasaportlar: 180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Romanya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>Resmi pasaportlar: altı ay içinde üç ayı aşmamak kaydıyla, vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Ruanda:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rusya Federasyonu:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Sao Tome ve Principe:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>15 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>St. Christopher (St. Kitts) ve Nevis:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>St. Lucia:
+                </td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>St. Vincent-Grenadines:
+                </td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>Senegal:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Seyşeller:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar ikamet süreli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Sırbistan:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla, anılan ülkeye yapacakları seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Sierra Leone:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Singapur:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 günü geçmeyen turistik amaçlı seyahatlerde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Slovakya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 gün için vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Slovenya:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>180 gün içinde 90 günü aşmamak kaydıyla vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>Solomon Adaları:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Somali:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sri Lanka:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>30 güne kadar turistik amaçlı seyahatlerinde vizelerini
+                  <a href="http://www.eta.gov.lk/slvisa/" target="_blank">internet adresinden</a>
+                  veya ülkeye girişte sınır kapılarında alabilmektedirler.
+                </td>
+              </tr>
+              <tr>
+                <td>Sudan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>Umuma Mahsus Pasaport hamilleri 30 güne kadar ikamet süreli tek giriş vizelerini Hartum Uluslararası Havaalanı’nda
+                  bandrol tatbikiyle (105 ABD Doları) alabilirler. Diplomatik Pasaport hamilleri, Sudan'a yapacakları turizm
+                  amaçlı seyahatleri veya transit geçişlerinde, Sudan'da toplam ikamet süresi, ilk giriş tarihinden itibaren
+                  geçerli olacak şekilde, 180 gün içerisinde 90 günü geçmemek kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Surinam:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Suriye:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>ilk giriş tarihinden itibaren geçerli olacak şekilde doksan (90) gün ikametli seyahatlerinde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Suudi Arabistan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Svaziland:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>30 güne kadar vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Şili:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar vizeden muaftır</td>
+              </tr>
+              <tr>
+                <td>Tacikistan:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır</td>
+                <td>
+                  Hususi ve hizmet pasaportlar 60 günü geçmemek kaydıyla vizeden muaftır.
+                  Umuma Mahsus Pasaport hamili vatandaşlarımızın, Tacikistan'a gerçekleştirecekleri turistik amaçlı seyahatleri
+                  öncesinde
+                  <a href="http://www.evisa.tj">buradan</a>, bunun dışındaki amaçlarla gerçekleştirecekleri seyahatleri öncesinde ise
+                  <a href="https://www.visa.gov.tj/index.html">buradan</a>
+                  internet adreslerinden başvurularını yaparak vizelerini almaları gerekmekte olup, havalimanında vize itası uygulaması kaldırılmıştır.
+                  Tacikistan’a akredite diplomatik, konsolosluk veya uluslararası örgütler nezdindeki temsilciliklere atanan
+                  Hizmet ve Hususi Pasaport hamilleri, görevleri müddetince, vizeden muaftır. Tacikistan’a görevle atanmayan,
+                  Hizmet ve Hususi Pasaport hamilleri, Tacikistan’a yapacakları turizm amaçlı seyahatleri veya transit geçişlerinde,
+                  toplam ikamet süresi, ilk giriş tarihinden itibaren geçerli olacak şekilde, altı ay içerisinde 60 günü
+                  geçmemek kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Tanzanya:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>90 güne kadar muaftır</td>
+              </tr>
+              <tr>
+                <td>Tayland:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>Resmi : 90 güne , umuma 30 güne kadar vizeden muaftır.</td>
+
+              </tr>
+              <tr>
+                <td>Tayvan:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Ayrıca umuma mahsus pasaport hamili Türk vatandaşlarının, 30 güne kadar ikamet süreli tek girişli vizelerini
+                  Taipei’deki Taoyuan Uluslararası Havaalanından giriş yapmaları şartıyla (ayrıca dönüş bileti ibraz etmeleri,
+                  vize müracaat formu doldurmaları, iki adet vesikalık fotoğraf ibraz etmeleri gerekmektedir) sınırda harçsız
+                  almaları mümkündür.</td>
+              </tr>
+              <tr>
+                <td>Togo:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tonga:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Trinidad-Tobago:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>30 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Tunus:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Tuvalu:</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Türkmenistan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>
+                  Diplomatik : 30 güne kadar vizeden muaftır.
+                  Hizmet ve Hususi pasaport hamili vatandaşlarımız vizeden muaf olmakla birlikte, davet edilmek ve pasaport
+                  bilgileri ilgili Türkmen makamlarına bildirilmek kaydıyla ülkeye kabul edilmektedir.</td>
+              </tr>
+              <tr>
+                <td>Uganda:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>90 gün süreyle vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Ukrayna:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>
+                  umuma 60 gün , Resmi 90 Gün kadar ikamet süreli seyahatlerinde vizeden muaftır.
+                  Vatandaşlarımızın Ukrayna’ya geçerli biyometrik kimlik belgeleri ile vizesiz olarak seyahat edebilmeleri
+                  mümkündür.</td>
+              </tr>
+              <tr>
+                <td>Uruguay:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Ürdün:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 günü aşmamak kaydıyla vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Vanuatu:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>30 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Venezuella:</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadarki turistik amaçlı seyahatlerde vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Vietnam:</td>
+                <td>tabidir</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>muaftır.</td>
+                <td>90 güne kadar vizeden muaftır.</td>
+              </tr>
+              <tr>
+                <td>Yemen:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yeni Zelanda:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yunanistan:</td>
+                <td>tabidir</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td>muaftır</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Zambiya:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>Umuma Mahsus Pasaport hamilleri turizm veya iş görüşmesi amaçlı seyahatleri için 30 güne kadar ikamet süreli
+                  tek, çift veya müteaddit girişli vizelerini sınır kapılarında alabilirler. Zambiya'ya akredite diplomatik
+                  temsilciliklere atanan Diplomatik Pasaport hamilleri de vizelerini sınırda alabilirler. Zambiya’ya seyahat
+                  edecek vatandaşlrımız,
+                  <a href="https://evisa.zambiaimmigration.gov.zm/#/application">adresi üzerinden</a>
+                  çalışma vizeleri dışında diğer vize türleri için e-vize alabilmektedirler.</td>
+              </tr>
+              <tr>
+                <td>Zimbabve:</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td>tabidir</td>
+                <td></td>
+              </tr>
+              <!-- Table information end -->
 
             </tbody>
             <tfoot>
+               
               <tr>
-                <td colspan="5" class="text-center">Bilgileri  <a href="http://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank">Dışİşleri bakanlığı</a> Sitesinden Toplandı.</td>
+                <td colspan="5" class="text-center">Bilgileri
+                  <a href="http://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank">Dışİşleri bakanlığı</a> Sitesinden Toplandı.</td>
               </tr>
+
             </tfoot>
           </table>
         </div>
       </div>
     </div>
-    
-    <p class="p"> <a href="https://github.com/a0m0rajab" target="_blank">Abdurrahman RAJAB.</a></p>
+    <div class="w3-col" style="width:5%">
+      <p></p>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+  <p class="p" >
+      Açıklamalar: Yukarıda yer alan bilgiler sadece turistik amaçlı tek giriş vizeleri için geçerlidir. Öğrenim, çalışma, çok
+      girişli vize, uzun süreli ikamet vb. nedenlerle yapılacak seyahatlere ilişkin vize uygulamaları hakkında gidilecek ülkenin
+      temsilciliğinden bilgi alınması, resmi göreve atananların ise Bakanlığımız ile irtibata geçmeleri gerekmektedir.
+</p>
+
+  <p class="p">
+    <a href="https://github.com/a0m0rajab" target="_blank">Abdurrahman RAJAB.</a>
+  </p>
 
 </body>
 <style>
-body { 
-  font-size: 140%; 
-}
+  body {
+    font-size: 140%;
+  }
 
-h2 {
-  text-align: center;
-  padding: 20px 0;
-}
+  h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
 
-table caption {
-	padding: .5em 0;
-}
+  table caption {
+    padding: .5em 0;
+  }
 
-table.dataTable th,
-table.dataTable td {
-  white-space: nowrap;
-}
+  table.dataTable th,
+  table.dataTable td {
+    white-space: nowrap;
+  }
 
-.p {
-  text-align: center;
-  padding-top: 140px;
-  font-size: 14px;
+  .p {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+  }
+  table.dataTable tr.child ul li {
+    white-space: initial;
 }
-
 </style>
 <script>
-    $('table').DataTable();
+  $('table').DataTable();
 </script>
+
 </html>
