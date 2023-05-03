@@ -41,6 +41,11 @@
 <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap.js"></script>
 <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 <script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+<!-- Data maps -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="datamaps.world.min.js"></script>
+
 </head>
 
 
@@ -1813,16 +1818,20 @@
         </div>
       </div>
     </div>
-    <div class="w3-col" style="width:5%">
-      <p></p>
-    </div>
+  </div>
+  <div class="w3-col">
+    <div class="w3-row"  >
+      <h2>
+        Pasaport tipine göre ziyaret edilebilecek ülkelerin haritası
+      </h2>
+      <p style="text-align: center;">Mavi olanlar ise tüm pasaportlara vize gerekmektedir
+      <div id="container" style="position: relative; width: 75vw; height: 45vw; left:10%"></div>
   </div>
 
-
-
-
+  </div>
 
   </div>
+
 
   <p class="p">
 
@@ -1880,6 +1889,618 @@
   table.buttons().container()
     .appendTo( $('.dataTables_info', table.table().container() ) );
 
+    var map = new Datamap({
+      element: document.getElementById('container'),
+      responsive: true,
+      fills: {
+        'diplo': 'black',
+        'hususi': 'green',
+        'umum': 'red',
+        'hizmet': 'grey',
+        'visa': "aqua",
+        defaultFill: 'purple'
+      },
+      data:
+      {
+    "AFG": {
+        fillKey: "diplo"
+    },
+    "DEU": {
+        fillKey: "hususi"
+    },
+    "USA": {
+        fillKey: "visa"
+    },
+    "AND": {
+        fillKey: "umum"
+    },
+    "AGO": {
+        fillKey: "visa"
+    },
+    "ATG": {
+        fillKey: "umum"
+    },
+    "ARG": {
+        fillKey: "umum"
+    },
+    "ALB": {
+        fillKey: "umum"
+    },
+    "AUS": {
+        fillKey: "visa"
+    },
+    "AUT": {
+        fillKey: "hususi"
+    },
+    "AZE": {
+        fillKey: "hususi"
+    },
+    "BHS": {
+        fillKey: "umum"
+    },
+    "BHR": {
+        fillKey: "hususi"
+    },
+    "BGD": {
+        fillKey: "hususi"
+    },
+    "BRB": {
+        fillKey: "umum"
+    },
+    "BLR": {
+        fillKey: "umum"
+    },
+    "BLZ": {
+        fillKey: "umum"
+    },
+    "BEL": {
+        fillKey: "hususi"
+    },
+    "BEN": {
+        fillKey: "diplo"
+    },
+    "ARE": {
+        fillKey: "hususi"
+    },
+    "BOL": {
+        fillKey: "umum"
+    },
+    "BIH": {
+        fillKey: "umum"
+    },
+    "BWA": {
+        fillKey: "umum"
+    },
+    "BRA": {
+        fillKey: "umum"
+    },
+    "BRN": {
+        fillKey: "umum"
+    },
+    "BGR": {
+        fillKey: "hususi"
+    },
+    "BFA": {
+        fillKey: "diplo"
+    },
+    "BDI": {
+        fillKey: "diplo"
+    },
+    "BTN": {
+        fillKey: "visa"
+    },
+    "CPV": {
+        fillKey: "visa"
+    },
+    "DZA": {
+        fillKey: "hususi"
+    },
+    "DJI": {
+        fillKey: "hususi"
+    },
+    "DNK": {
+        fillKey: "hususi"
+    },
+    "DOM": {
+        fillKey: "visa"
+    },
+    "DMA": {
+        fillKey: "umum"
+    },
+    "TLS": {
+        fillKey: "visa"
+    },
+    "GNQ": {
+        fillKey: "visa"
+    },
+    "ECU": {
+        fillKey: "umum"
+    },
+    "SLV": {
+        fillKey: "umum"
+    },
+    "IDN": {
+        fillKey: "umum"
+    },
+    "ERI": {
+        fillKey: "visa"
+    },
+    "ARM": {
+        fillKey: "visa"
+    },
+    "EST": {
+        fillKey: "hususi"
+    },
+    "ETH": {
+        fillKey: "diplo"
+    },
+    "MAR": {
+        fillKey: "umum"
+    },
+    "FJI": {
+        fillKey: "umum"
+    },
+    "CIV": {
+        fillKey: "hususi"
+    },
+    "PHL": {
+        fillKey: "umum"
+    },
+    "PSE": {
+        fillKey: "visa"
+    },
+    "FIN": {
+        fillKey: "hususi"
+    },
+    "FRA": {
+        fillKey: "hususi"
+    },
+    "GAB": {
+        fillKey: "diplo"
+    },
+    "GMB": {
+        fillKey: "diplo"
+    },
+    "GHA": {
+        fillKey: "diplo"
+    },
+    "GNB": {
+        fillKey: "visa"
+    },
+    "GIN": {
+        fillKey: "diplo"
+    },
+    "GRD": {
+        fillKey: "hususi"
+    },
+    "GTM": {
+        fillKey: "umum"
+    },
+    "GUY": {
+        fillKey: "hususi"
+    },
+    "ZAF": {
+        fillKey: "visa"
+    },
+    "SSD": {
+        fillKey: "diplo"
+    },
+    "GEO": {
+        fillKey: "umum"
+    },
+    "HTI": {
+        fillKey: "visa"
+    },
+    "IND": {
+        fillKey: "diplo"
+    },
+    "ANT": {
+        fillKey: "hususi"
+    },
+    "NLD": {
+        fillKey: "hususi"
+    },
+    "HND": {
+        fillKey: "umum"
+    },
+    "HKG": {
+        fillKey: "umum"
+    },
+    "HRV": {
+        fillKey: "hususi"
+    },
+    "IRQ": {
+        fillKey: "hususi"
+    },
+    "GBR": {
+        fillKey: "diplo"
+    },
+    "IRN": {
+        fillKey: "umum"
+    },
+    "IRL": {
+        fillKey: "visa"
+    },
+    "ESP": {
+        fillKey: "hususi"
+    },
+    "ISR": {
+        fillKey: "hususi"
+    },
+    "SWE": {
+        fillKey: "hususi"
+    },
+    "CHE": {
+        fillKey: "hususi"
+    },
+    "ITA": {
+        fillKey: "hususi"
+    },
+    "ISL": {
+        fillKey: "hususi"
+    },
+    "JAM": {
+        fillKey: "umum"
+    },
+    "JPN": {
+        fillKey: "umum"
+    },
+    "KHM": {
+        fillKey: "hususi"
+    },
+    "CMR": {
+        fillKey: "visa"
+    },
+    "CAN": {
+        fillKey: "visa"
+    },
+    "MNE": {
+        fillKey: "umum"
+    },
+    "QAT": {
+        fillKey: "umum"
+    },
+    "KAZ": {
+        fillKey: "umum"
+    },
+    "KEN": {
+        fillKey: "hususi"
+    },
+    "KIR": {
+        fillKey: "diplo"
+    },
+    "CTR": {
+        fillKey: "umum"
+    },
+    "COL": {
+        fillKey: "umum"
+    },
+    "COM": {
+        fillKey: "visa"
+    },
+    "COD": {
+        fillKey: "visa"
+    },
+    "COG": {
+        fillKey: "diplo"
+    },
+    "KOR": {
+        fillKey: "umum"
+    },
+    "PRK": {
+        fillKey: "visa"
+    },
+    "KSV": {
+        fillKey: "umum"
+    },
+    "CRI": {
+        fillKey: "umum"
+    },
+    "KWT": {
+        fillKey: "hususi"
+    },
+    "CUB": {
+        fillKey: "hususi"
+    },
+    "#N/A": {
+        fillKey: "visa"
+    },
+    "KGZ": {
+        fillKey: "umum"
+    },
+    "LAO": {
+        fillKey: "visa"
+    },
+    "LSO": {
+        fillKey: "visa"
+    },
+    "LVA": {
+        fillKey: "hususi"
+    },
+    "LBR": {
+        fillKey: "diplo"
+    },
+    "LBY": {
+        fillKey: "hususi"
+    },
+    "LIE": {
+        fillKey: "hususi"
+    },
+    "LTU": {
+        fillKey: "hususi"
+    },
+    "LBN": {
+        fillKey: "umum"
+    },
+    "LUX": {
+        fillKey: "hususi"
+    },
+    "HUN": {
+        fillKey: "hususi"
+    },
+    "MDG": {
+        fillKey: "visa"
+    },
+    "MAC": {
+        fillKey: "umum"
+    },
+    "MKD": {
+        fillKey: "umum"
+    },
+    "MWI": {
+        fillKey: "visa"
+    },
+    "MDV": {
+        fillKey: "umum"
+    },
+    "MYS": {
+        fillKey: "umum"
+    },
+    "MLI": {
+        fillKey: "diplo"
+    },
+    "MLT": {
+        fillKey: "hususi"
+    },
+    "MUS": {
+        fillKey: "umum"
+    },
+    "MEX": {
+        fillKey: "diplo"
+    },
+    "FSM": {
+        fillKey: "visa"
+    },
+    "MDA": {
+        fillKey: "umum"
+    },
+    "MCO": {
+        fillKey: "hususi"
+    },
+    "MRT": {
+        fillKey: "hususi"
+    },
+    "MOZ": {
+        fillKey: "hususi"
+    },
+    "MNG": {
+        fillKey: "umum"
+    },
+    "MMR": {
+        fillKey: "visa"
+    },
+    "EGY": {
+        fillKey: "hususi"
+    },
+    "NAM": {
+        fillKey: "hususi"
+    },
+    "NRU": {
+        fillKey: "visa"
+    },
+    "NPL": {
+        fillKey: "visa"
+    },
+    "NER": {
+        fillKey: "diplo"
+    },
+    "NGA": {
+        fillKey: "diplo"
+    },
+    "NIC": {
+        fillKey: "umum"
+    },
+    "NOR": {
+        fillKey: "hususi"
+    },
+    "OMN": {
+        fillKey: "hususi"
+    },
+    "CAF": {
+        fillKey: "visa"
+    },
+    "PAK": {
+        fillKey: "hususi"
+    },
+    "PLW": {
+        fillKey: "umum"
+    },
+    "PAN": {
+        fillKey: "umum"
+    },
+    "PNG": {
+        fillKey: "visa"
+    },
+    "PRY": {
+        fillKey: "umum"
+    },
+    "PER": {
+        fillKey: "umum"
+    },
+    "POL": {
+        fillKey: "hususi"
+    },
+    "PRT": {
+        fillKey: "hususi"
+    },
+    "ROU": {
+        fillKey: "hususi"
+    },
+    "RWA": {
+        fillKey: "visa"
+    },
+    "RUS": {
+        fillKey: "diplo"
+    },
+    "STP": {
+        fillKey: "umum"
+    },
+    "SEN": {
+        fillKey: "diplo"
+    },
+    "SYC": {
+        fillKey: "umum"
+    },
+    "SLE": {
+        fillKey: "visa"
+    },
+    "SGP": {
+        fillKey: "umum"
+    },
+    "SVK": {
+        fillKey: "hususi"
+    },
+    "SVN": {
+        fillKey: "hususi"
+    },
+    "SLB": {
+        fillKey: "visa"
+    },
+    "SOM": {
+        fillKey: "visa"
+    },
+    "LKA": {
+        fillKey: "visa"
+    },
+    "KNA": {
+        fillKey: "umum"
+    },
+    "LCA": {
+        fillKey: "umum"
+    },
+    "VCT": {
+        fillKey: "hususi"
+    },
+    "SDN": {
+        fillKey: "diplo"
+    },
+    "SUR": {
+        fillKey: "visa"
+    },
+    "SYR": {
+        fillKey: "umum"
+    },
+    "SAU": {
+        fillKey: "visa"
+    },
+    "SWZ": {
+        fillKey: "umum"
+    },
+    "SRB": {
+        fillKey: "umum"
+    },
+    "TJK": {
+        fillKey: "hususi"
+    },
+    "TZA": {
+        fillKey: "hususi"
+    },
+    "THA": {
+        fillKey: "umum"
+    },
+    "TWN ": {
+        fillKey: "visa"
+    },
+    "TGO": {
+        fillKey: "visa"
+    },
+    "TON": {
+        fillKey: "diplo"
+    },
+    "TTO": {
+        fillKey: "umum"
+    },
+    "TUN": {
+        fillKey: "umum"
+    },
+    "TUV": {
+        fillKey: "umum"
+    },
+    "TKM": {
+        fillKey: "hususi"
+    },
+    "UGA": {
+        fillKey: "diplo"
+    },
+    "UKR": {
+        fillKey: "umum"
+    },
+    "URY": {
+        fillKey: "umum"
+    },
+    "VUT": {
+        fillKey: "umum"
+    },
+    "VEN": {
+        fillKey: "umum"
+    },
+    "VNM": {
+        fillKey: "hususi"
+    },
+    "YEM": {
+        fillKey: "hususi"
+    },
+    "NZL": {
+        fillKey: "visa"
+    },
+    "GRC": {
+        fillKey: "hususi"
+    },
+    "ZMB": {
+        fillKey: "visa"
+    },
+    "ZWE": {
+        fillKey: "visa"
+    },
+    "TCD": {
+        fillKey: "diplo"
+    },
+    "CZE": {
+        fillKey: "hususi"
+    },
+    "CHN": {
+        fillKey: "hususi"
+    },
+    "UZB": {
+        fillKey: "umum"
+    },
+    "JOR": {
+        fillKey: "umum"
+    },
+    "CHL": {
+        fillKey: "umum"
+    },
+    "": {
+        fillKey: "undefined"
+    },
+}
+    
+    });
+
+     // Pure JavaScript
+     window.addEventListener('resize', function() {
+        map.resize();
+    });
 </script>
 
 </html>
