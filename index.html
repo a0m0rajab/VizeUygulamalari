@@ -24,7 +24,23 @@
   <script src="https://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
   <script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
-
+  <!-- Buttons --> 
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap.min.js"></script> -->
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script> -->
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+<script src="https://cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
 </head>
 
 
@@ -1776,7 +1792,10 @@
 
               <tr>
                 <td colspan="6" class="text-center">Bilgileri
-                  <a href="http://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank">Dışİşleri bakanlığı</a> Sitesinden Toplandı.</td>
+                  <a href="http://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank">Dışİşleri bakanlığı</a> Sitesinden Toplandı.
+                
+                </td>
+
               </tr>
               <tr>
                 <td colspan="6" class="text-center" style="white-space: initial;">
@@ -1786,6 +1805,7 @@
                   ile irtibata geçmeleri gerekmektedir.
 
                 </td>
+                
               </tr>
 
             </tfoot>
@@ -1851,8 +1871,14 @@
 
 </style>
 <script>
-  $('table').DataTable();
+  var table = $('table').DataTable({
+    buttons: [
+      'copy', 'excel', 'pdf'
+    ]
+  });
 
+  table.buttons().container()
+    .appendTo( $('.dataTables_info', table.table().container() ) );
 
 </script>
 
